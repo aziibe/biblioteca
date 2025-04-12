@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Minhas Solicitações - Biblioteca Solidária</title>
-  <link rel="stylesheet" href="css/minhas.css"/>
+  <title>Login / Cadastro - Biblioteca Solidária</title>
+  <link rel="stylesheet" href="css/login.css"/>
 </head>
 <body>
   <header>
@@ -12,22 +12,27 @@
       <a href="index.html">Início</a>
     </nav>
   </header>
-
+  
   <main>
-    <h2>Minhas Solicitações</h2>
+    <div class="form-container">
+      <h2>Login</h2>
+      <form id="form-login" aria-label="Formulário de Login">
+        <input type="email" name="email" placeholder="E-mail" required aria-required="true" />
+        <input type="password" name="senha" placeholder="Senha" required aria-required="true" />
+        <button type="submit">Entrar</button>
+      </form>
 
-    <div class="solicitacoes-container">
-      <div class="book-card">
-        <strong>Título:</strong> ......<br>
-        <strong>Status:</strong> ........<br>
-        <strong>Entrega:</strong> ......
-      </div>
-
-      <div class="book-card">
-        <strong>Título:</strong> .......<br>
-        <strong>Status:</strong> .....<br>
-        <strong>Entrega:</strong> ......
-      </div>
+      <h2>Cadastro</h2>
+      <form id="form-cadastro" aria-label="Formulário de Cadastro">
+        <input type="text" name="nome" placeholder="Nome completo" required aria-required="true" />
+        <input type="email" name="email" placeholder="E-mail" required aria-required="true" />
+        <input type="password" name="senha" placeholder="Senha" required aria-required="true" />
+        <input type="text" name="endereco" placeholder="Endereço" required aria-required="true" />
+        <input type="text" name="numero" placeholder="Número" required aria-required="true" />
+        <input type="text" name="cidade" placeholder="Cidade" required aria-required="true" />
+        <input type="text" name="cep" placeholder="CEP" required aria-required="true" />
+        <button type="submit">Cadastrar</button>
+      </form>
     </div>
   </main>
 </body>
