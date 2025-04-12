@@ -5,11 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Descrição do Livro</title>
   <link rel="stylesheet" href="css/solicitar.css" />
+  <style>
+    /* Estilo para o botão do WhatsApp */
+    .whatsapp-button {
+      display: inline-block;
+      background-color: #25D366; /* Cor do WhatsApp */
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-size: 16px;
+      margin-top: 10px;
+      transition: background-color 0.3s;
+    }
+
+    .whatsapp-button:hover {
+      background-color: #128C7E; /* Cor ao passar o mouse */
+    }
+  </style>
 </head>
 <body>
   <header>
     <nav>
-      <a href="index.html">Inicio</a>
+      <a href="index.html">Início</a>
     </nav>
   </header>
 
@@ -21,12 +40,14 @@
         <p><strong>Autor:</strong> Fulano de Tal</p>
         <p><strong>Gênero:</strong> Aventura</p>
         <p class="livro-descricao">
-          descrição.......
+          Descrição.......
         </p>
         <button>Solicitar Livro</button>
+        <a href="https://wa.me/5511999999999" class="whatsapp-button" target="_blank">
+          Contatar pelo WhatsApp
+        </a>
       </div>
     </div>
   </main>
 </body>
 </html>
-
