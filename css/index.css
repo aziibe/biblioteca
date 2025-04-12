@@ -26,9 +26,12 @@ nav a {
   border: 1px solid #3b3b3b;
   border-radius: 50px;
   background-color: #292929;
-  padding: 2mm;
+  padding: 0.5rem 1rem; /* Ajustado para um valor mais consistente */
   font: italic small-caps bold 15px/15px Arial, Helvetica, Sans-serif;
   transition: transform 0.2s;
+}
+nav a:hover {
+  transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
 }
 
 main {
@@ -44,7 +47,7 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
-  justify-content: left;
+  justify-content: center; /* Centraliza os cartões */
 }
 
 .book-card {
@@ -55,7 +58,7 @@ h2 {
   border: 2px solid #86859b;
   border-radius: 30px;
   padding: 1.5rem;
-  width: 500px;
+  width: 300px; /* Ajustado para ser mais responsivo */
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
   font-size: 16px;
 
