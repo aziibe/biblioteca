@@ -1,0 +1,104 @@
+Adcionar / Editar Livros
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adicionar/Editar Livro - Biblioteca Solidária</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    form {
+      background: white;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      margin-top: 10px;
+      display: block;
+    }
+
+    input[type="text"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Adicionar/Editar Livro</h1>
+  <form id="livro-form">
+    <label for="titulo">Título:</label>
+    <input type="text" id="titulo" required />
+
+    <label for="autor">Autor:</label>
+    <input type="text" id="autor" required />
+
+    <label for="descricao">Descrição:</label>
+    <textarea id="descricao" rows="4" required></textarea>
+
+    <label for="categoria">Categoria:</label>
+    <select id="categoria" required>
+      <option value="">Selecione uma categoria</option>
+      <option value="ficcao">Ficção</option>
+      <option value="nao-ficcao">Não Ficção</option>
+      <option value="aventura">Aventura</option>
+      <option value="romance">Romance</option>
+      <option value="mistérios">Mistérios</option>
+      <option value="ficcao-cientifica">Ficção Científica</option>
+    </select>
+
+    <label for="classificacao">Classificação de Faixa Etária:</label>
+    <select id="classificacao" required>
+      <option value="">Selecione uma classificação</option>
+      <option value="10+">10+</option>
+      <option value="13+">13+</option>
+      <option value="16+">16+</option>
+      <option value="18+">18+</option>
+    </select>
+
+    <button type="submit">Salvar</button>
+  </form>
+
+  <script>
+    document.getElementById('livro-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      // Aqui você pode adicionar a lógica para salvar o livro
+      alert('Livro salvo com sucesso!');
+      // Limpar o formulário após salvar
+      this.reset();
+    });
+  </script>
+
+</body>
+</html>
