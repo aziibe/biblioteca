@@ -59,7 +59,6 @@ h2 {
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
   font-size: 16px;
 
-  /* Efeito de movimento ao passar o mouse */
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -87,7 +86,6 @@ h2 {
   margin: 0 0 0.5rem;
 }
 
-/* Estilo de botões unificado */
 .book-info button,
 .book-card button {
   margin-top: 1rem;
@@ -104,4 +102,23 @@ h2 {
 .book-info button:hover,
 .book-card button:hover {
   background-color: #264e26;
+}
+
+.edit-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #327934;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.edit-button:hover {
+  background-color: #388e3c;
 }
